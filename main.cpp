@@ -49,6 +49,8 @@ int main()
     //1-B-1.  turn should be assigned the value 'O'
     //1-C.  In any other case, then...
     //1-C-1.  turn should be assigned the value 'X'
+   else
+   {
      board[row][column]= turn;
      if(turn==X)
      {
@@ -58,7 +60,7 @@ int main()
      {
         turn=X;
      }
-
+   }
     cout<<"\nBOARD\n-----\n";
     
     for(int r=0;r<3;r++){
@@ -67,6 +69,7 @@ int main()
         }
         cout<<"\n";
     }
+  
 
     //TODO: Print the current board
     //Outline
